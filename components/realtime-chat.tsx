@@ -58,7 +58,7 @@ export const RealtimeChat = ({
   }, [allMessages, onMessage])
 
   useEffect(() => {
-    scrollToBottom({ behavior: 'smooth' })
+    scrollToBottom()
   }, [allMessages, scrollToBottom])
 
   const handleSendMessage = useCallback(
